@@ -20,37 +20,38 @@ This project replicates Akinwumi et al. (2025) *Evaluating machine learning mode
 
 ## Workflow
 
-1. **Preprocessing:**  
+1. **Preprocessing**  
    - Fill missing BMI (median) and smoking status (mode)  
    - Label encode binary features, one-hot encode multi-class features  
    - Remove `id` column  
 
-2. **Train-Test Split & Scaling:**  
+2. **Train-Test Split & Scaling**  
    - Stratified 80/20 split  
    - StandardScaler applied to numeric features  
 
-3. **Handle Class Imbalance:**  
+3. **Handle Class Imbalance**  
    - SMOTE applied to training set only  
 
-4. **Models:**  
+4. **Models**  
    - Logistic Regression, Random Forest, Gradient Boosting, SVM, KNN  
    - Fixed random seeds and reference hyperparameters  
 
-5. **Evaluation:**  
+5. **Evaluation**  
    - Accuracy, Precision, Recall, F1-score, ROC-AUC  
    - Confusion matrices, ROC & Precision-Recall curves  
    - 5-Fold Cross-Validation and paired t-tests vs Logistic Regression  
-
+6.  **Result**
+   - Best model selected based on ROC-AUC: Logistic Regression
 ---
 
 ## How to Run in Colab
 
 1. Open the notebook directly in Colab:  
-   [Open in Colab](https://colab.research.google.com/drive/1seNNfprY1-l6E5Om6k5EJiz6lVXsqluZ#scrollTo=x98Kstb4pPUi)
+   [Open in Colab](https://colab.research.google.com/drive/1seNNfprY1-l6E5Om6k5EJiz6lVXsqluZ#scrollTo=76FEPNmJVZn)
 
 2. Upload `stroke_data.csv` when prompted.  
 
-3. Run the cells sequentially; all preprocessing, training, evaluation, and cross-validation steps are included.
+3. Run the cells sequentially, all preprocessing, training, evaluation, and cross-validation steps are included.
 
 ---
 
